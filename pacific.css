@@ -1,0 +1,117 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+    background-image: url("ptrbackground.jpg");
+    background-position: top;
+    background-repeat: repeat-x;
+    background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin-inline: auto;
+}
+
+#wrapper {
+    display:grid;
+    grid-template-areas: 
+        'header header header'
+        'nav content content'
+        'nav footer footer';
+    grid-template-columns: 160px 4fr 8fr; 
+    grid-template-rows: 60px 600px 60px;
+    min-width: 600px;
+}
+
+header {
+    grid-area: header;
+    background-image: url("sunset.jpg");
+    background-repeat: no-repeat; 
+    background-position: right;
+    background-color: #000033;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #3399CC;
+}
+
+img {
+    float: left;
+    margin-right: 30px;
+}
+
+#content, footer {
+    background-color: white;
+}
+
+#content {
+    grid-area: content;
+    padding-inline: 20px;
+}
+
+
+nav ul {
+	font-size: 1.2em;
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: left;
+}
+
+div > ul {
+    list-style-type: none;
+}
+
+div > ul li {
+    list-style-image: url('marker.gif');
+    list-style-position: inside
+}
+
+span {
+	color: #3399CC;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000033;
+    font-weight: bold;
+}
+
+nav a:visited {
+	color: #FFFFFF;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h1 {
+    margin: 15px;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+    height:525px;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+    grid-area: footer;
+	font-family: Georgia, "Times New Roman", serif;
+    padding-inline: 20px;
+}
